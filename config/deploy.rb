@@ -3,13 +3,13 @@ lock "~> 3.18.0"
 
 set :application, "sample_rails_app"
 set :repo_url, "git@github.com:umn-ansible/rails_sample_app.git"
-set :tmp_dir, "#{fetch(:home)}/tmp"
+set :tmp_dir, "/home/latis_deploy/tmp"
 
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "/var/www/html/"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
