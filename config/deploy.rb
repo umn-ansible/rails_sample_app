@@ -1,8 +1,9 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.18.0"
 
-set :application, "sample rails app"
+set :application, "sample_rails_app"
 set :repo_url, "git@github.com:umn-ansible/rails_sample_app.git"
+set :tmp_dir, "#{fetch(:home)}/tmp"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
