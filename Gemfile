@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.0.4"
+ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
@@ -64,3 +64,4 @@ gem 'capistrano',                 '3.18'
 gem 'capistrano-rails',           '1.4.0'
 gem 'capistrano-rbenv',           '2.1.4 '
 gem 'capistrano-passenger',       '0.2.1'
+gem 'capistrano-bundler', '~> 2.0'
